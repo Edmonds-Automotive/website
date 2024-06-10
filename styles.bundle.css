@@ -1,0 +1,166 @@
+header #navTickets {
+  border-bottom: 1px solid black;
+}
+header #navTickets a {
+  color: black;
+}
+header #navTickets #buyTickets {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header #navVenue {
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+header #navVenue li:nth-child(2) a {
+  font-weight: bold;
+}
+header #navVenue a {
+  color: white;
+  font-weight: 400;
+}
+header #navVenue #buyTickets {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border: 2px solid white;
+}
+header #navVenue #buyTickets:hover {
+  color: white;
+  background-color: red;
+  border-radius: 7px;
+}
+header #navVenue #navTicketsIcon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#heroTextMain {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#heroTextMain2 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#heroText3 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Yellowtail", cursive;
+  padding: 0px;
+  padding-bottom: 20px;
+  font-size: 5em;
+  color: white;
+}
+
+.navGlobal.scrolled {
+  background: black;
+  transition: 0.5s ease-in-out;
+  border-bottom: none;
+}
+
+.navGlobal {
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+.navGlobal .navbar-brand {
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5em;
+  padding: 0px;
+}
+
+#heroImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heroImage .heroText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yellowtail", cursive;
+}
+#heroImage .heroSubText {
+  font-family: "Yellowtail", cursive;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: -20px; /* Adjust spacing as needed */
+}
+#heroImage .heroPara {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footerNav {
+  border-right: 0.5px solid rgba(84, 84, 84, 0.4901960784);
+}
+
+#footerNav ul {
+  list-style: none;
+}
+#footerNav ul li a {
+  font-size: 0.9em;
+  font-style: normal;
+  line-height: 2;
+}
+
+#footerLogo {
+  text-align: center;
+}
+#footerLogo h2 {
+  font-family: "Yellowtail", cursive;
+  font-size: 4.5em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#footerLogo #address {
+  font-size: 0.9em;
+  color: #a9a9a9;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#copyrightMsg {
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+footer a:hover {
+  color: red;
+}
