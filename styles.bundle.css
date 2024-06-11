@@ -80,11 +80,11 @@ header #navVenue #navTicketsIcon {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 75vh; /* Adjust the height as needed */
+  min-height: 75vh; /* Adjust the height as needed */
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Align items to the bottom */
-  padding-bottom: 25%; /* Move the text up by 25% from the bottom */
+  padding-bottom: 10%; /* Move the text up by 10% from the bottom */
 }
 #heroImage .heroTextContainer {
   text-align: center;
@@ -109,7 +109,7 @@ header #navVenue #navTicketsIcon {
   font-size: 2em;
   color: white;
   text-align: center;
-  margin-top: -20px; /* Adjust spacing as needed */
+  margin-top: 10px; /* Added margin to create space */
   word-wrap: break-word; /* Allow text to wrap */
   width: 100%;
   box-sizing: border-box;
@@ -182,8 +182,8 @@ footer a:hover {
 
 @media (max-width: 768px) {
   #heroImage {
-    height: 50vh; /* Adjust height for smaller screens */
-    padding-bottom: 15%; /* Adjust padding */
+    min-height: 60vh; /* Adjust height for smaller screens */
+    padding-bottom: 10%; /* Adjust padding */
   }
   #heroImage .heroTextContainer {
     padding: 0 5%; /* Increase padding on smaller screens */
@@ -193,6 +193,7 @@ footer a:hover {
   }
   #heroImage .heroSubText {
     font-size: 1em; /* Smaller font size */
+    margin-top: 10px; /* Maintain space in smaller screens */
   }
   #footerLogo h2 {
     font-size: 2em; /* Smaller font size */
@@ -204,14 +205,15 @@ footer a:hover {
 
 @media (max-width: 576px) {
   #heroImage {
-    height: 40vh; /* Further adjust height for very small screens */
-    padding-bottom: 10%; /* Further adjust padding */
+    min-height: 50vh; /* Further adjust height for very small screens */
+    padding-bottom: 5%; /* Further adjust padding */
   }
   #heroImage .heroText {
     font-size: 1.5em; /* Even smaller font size */
   }
   #heroImage .heroSubText {
     font-size: 0.8em; /* Even smaller font size */
+    margin-top: 10px; /* Maintain space in smaller screens */
   }
   #footerLogo h2 {
     font-size: 1.5em; /* Even smaller font size */
@@ -221,14 +223,15 @@ footer a:hover {
 /* iPhone XR (max-width: 414px) */
 @media (max-width: 414px) {
   #heroImage {
-    height: 40vh; /* Further adjust height for iPhone XR */
-    padding-bottom: 10%; /* Further adjust padding */
+    min-height: 50vh; /* Further adjust height for iPhone XR */
+    padding-bottom: 5%; /* Further adjust padding */
   }
   #heroImage .heroText {
     font-size: 1.8em; /* Adjusted font size for iPhone XR */
   }
   #heroImage .heroSubText {
     font-size: 0.9em; /* Adjusted font size for iPhone XR */
+    margin-top: 10px; /* Maintain space in smaller screens */
   }
   #footerLogo h2 {
     font-size: 1.8em; /* Adjusted font size for iPhone XR */
@@ -238,14 +241,15 @@ footer a:hover {
 /* iPhone 12 Pro (max-width: 390px) */
 @media (max-width: 390px) {
   #heroImage {
-    height: 40vh; /* Further adjust height for iPhone 12 Pro */
-    padding-bottom: 10%; /* Further adjust padding */
+    min-height: 50vh; /* Further adjust height for iPhone 12 Pro */
+    padding-bottom: 5%; /* Further adjust padding */
   }
   #heroImage .heroText {
-    font-size: 0.6em; /* Adjusted font size for iPhone 12 Pro */
+    font-size: 1.6em; /* Adjusted font size for iPhone 12 Pro */
   }
   #heroImage .heroSubText {
     font-size: 0.8em; /* Adjusted font size for iPhone 12 Pro */
+    margin-top: 10px; /* Maintain space in smaller screens */
   }
   #footerLogo h2 {
     font-size: 1.6em; /* Adjusted font size for iPhone 12 Pro */
