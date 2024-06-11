@@ -89,15 +89,20 @@ header #navVenue #navTicketsIcon {
 #heroImage .heroTextContainer {
   text-align: center;
   width: 100%;
+  padding: 0 5%; /* Add padding around the text */
+  box-sizing: border-box;
 }
 #heroImage .heroText {
   font-family: "Montserrat", sans-serif; /* Use normal font */
-  font-size: 5em;
+  font-size: 4em; /* Adjust font size */
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  word-wrap: break-word; /* Allow text to wrap */
+  width: 100%;
+  box-sizing: border-box;
 }
 #heroImage .heroSubText {
   font-family: "Montserrat", sans-serif; /* Use normal font */
@@ -105,6 +110,9 @@ header #navVenue #navTicketsIcon {
   color: white;
   text-align: center;
   margin-top: -20px; /* Adjust spacing as needed */
+  word-wrap: break-word; /* Allow text to wrap */
+  width: 100%;
+  box-sizing: border-box;
 }
 #heroImage .heroPara {
   color: white;
@@ -119,6 +127,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 10px 0; /* Reduced padding */
 }
 
 #footerLogo h2 {
@@ -151,4 +160,94 @@ footer a {
 }
 footer a:hover {
   color: red;
+}
+
+@media (max-width: 1200px) {
+  #heroImage .heroText {
+    font-size: 3.5em; /* Smaller font size */
+  }
+  #heroImage .heroSubText {
+    font-size: 1.8em; /* Smaller font size */
+  }
+}
+
+@media (max-width: 992px) {
+  #heroImage .heroText {
+    font-size: 3em; /* Smaller font size */
+  }
+  #heroImage .heroSubText {
+    font-size: 1.5em; /* Smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  #heroImage {
+    height: 50vh; /* Adjust height for smaller screens */
+    padding-bottom: 15%; /* Adjust padding */
+  }
+  #heroImage .heroTextContainer {
+    padding: 0 5%; /* Increase padding on smaller screens */
+  }
+  #heroImage .heroText {
+    font-size: 2em; /* Smaller font size */
+  }
+  #heroImage .heroSubText {
+    font-size: 1em; /* Smaller font size */
+  }
+  #footerLogo h2 {
+    font-size: 2em; /* Smaller font size */
+  }
+  footer {
+    padding: 10px 0; /* Reduced padding */
+  }
+}
+
+@media (max-width: 576px) {
+  #heroImage {
+    height: 40vh; /* Further adjust height for very small screens */
+    padding-bottom: 10%; /* Further adjust padding */
+  }
+  #heroImage .heroText {
+    font-size: 1.5em; /* Even smaller font size */
+  }
+  #heroImage .heroSubText {
+    font-size: 0.8em; /* Even smaller font size */
+  }
+  #footerLogo h2 {
+    font-size: 1.5em; /* Even smaller font size */
+  }
+}
+
+/* iPhone XR (max-width: 414px) */
+@media (max-width: 414px) {
+  #heroImage {
+    height: 40vh; /* Further adjust height for iPhone XR */
+    padding-bottom: 10%; /* Further adjust padding */
+  }
+  #heroImage .heroText {
+    font-size: 1.8em; /* Adjusted font size for iPhone XR */
+  }
+  #heroImage .heroSubText {
+    font-size: 0.9em; /* Adjusted font size for iPhone XR */
+  }
+  #footerLogo h2 {
+    font-size: 1.8em; /* Adjusted font size for iPhone XR */
+  }
+}
+
+/* iPhone 12 Pro (max-width: 390px) */
+@media (max-width: 390px) {
+  #heroImage {
+    height: 40vh; /* Further adjust height for iPhone 12 Pro */
+    padding-bottom: 10%; /* Further adjust padding */
+  }
+  #heroImage .heroText {
+    font-size: 0.6em; /* Adjusted font size for iPhone 12 Pro */
+  }
+  #heroImage .heroSubText {
+    font-size: 0.8em; /* Adjusted font size for iPhone 12 Pro */
+  }
+  #footerLogo h2 {
+    font-size: 1.6em; /* Adjusted font size for iPhone 12 Pro */
+  }
 }
