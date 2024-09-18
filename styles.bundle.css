@@ -170,6 +170,29 @@ footer a {
 footer a:hover {
   color: red;
 }
+.updateBox {
+  background: rgba(255, 255, 255, 0.2); /* Light background color */
+  backdrop-filter: blur(8px); /* Apply blur */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* Ensure good contrast */
+
+  /* Center the box vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Limit width for better responsiveness */
+  text-align: center;
+}
+
+.updateBox h3 {
+  font-weight: bold;
+}
+
+.updateBox a {
+  color: #ffc107; /* Highlight link */
+}
 
 @media (max-width: 1200px) {
   #heroImage .heroText {
