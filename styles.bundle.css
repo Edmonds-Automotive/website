@@ -175,15 +175,23 @@ footer a:hover {
   backdrop-filter: blur(8px); /* Apply blur */
   padding: 20px;
   border-radius: 10px;
-  color: #fff; /* Ensure good contrast */
-
-  /* Center the box vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%; /* Limit width for better responsiveness */
+  color: #fff;
   text-align: center;
+
+  /* Remove absolute positioning to avoid overlap */
+  margin-top: 20px; /* Add space above the box */
+  margin-bottom: 20px; /* Add space below the box */
+  max-width: 80%; /* Limit the width to keep it responsive */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+.heroTextContainer {
+  padding-bottom: 60px; /* Ensure space between the text and the update box */
+}
+
+.heroImage {
+  padding-top: 80px; /* Push the content down from the top */
 }
 
 .updateBox h3 {
