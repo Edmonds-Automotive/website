@@ -68,6 +68,10 @@ body {
   max-width: 100%;
   margin: 0 auto 20px auto;
 }
+/* Default font size for update box */
+.updateBox p {
+  font-size: 1.4rem; /* Increased from default ~1.1rem */
+}
 
 .updateBox a {
   color: #ffc107;
@@ -159,3 +163,21 @@ footer a:hover {
     font-size: 1.3em;
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .updateBox p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .updateBox p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .updateBox p {
+    font-size: 1.1rem;
+  }
