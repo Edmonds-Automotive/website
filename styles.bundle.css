@@ -1,13 +1,4 @@
-header #navTickets {
-  border-bottom: 1px solid black;
-}
-header #navTickets a {
-  color: black;
-}
-header #navTickets #buyTickets {
-  display: none;
-}
-
+/* Global Defaults */
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -20,134 +11,88 @@ body {
   margin: 0;
 }
 
-header #navVenue {
-  background: transparent;
-  border-bottom: 1px solid white;
-}
-header #navVenue li:nth-child(2) a {
-  font-weight: bold;
-}
-header #navVenue a {
-  color: white;
-  font-weight: 400;
-}
-header #navVenue #buyTickets {
-  color: white;
-  font-weight: bold;
-  background-color: black;
-  border: 2px solid white;
-}
-header #navVenue #buyTickets:hover {
-  color: white;
-  background-color: red;
-  border-radius: 7px;
-}
-header #navVenue #navTicketsIcon {
-  background-image: url("./images/background.jpeg");
-}
-
-#heroTextMain {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-#heroTextMain2 {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-#heroText3 {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Yellowtail", cursive;
-  padding: 0px;
-  padding-bottom: 20px;
-  font-size: 5em;
-  color: white;
-}
-
-.navGlobal.scrolled {
-  background: black;
-  transition: 0.5s ease-in-out;
-  border-bottom: none;
-}
-
+/* Navbar Styling */
 .navGlobal {
   background: transparent;
   border-bottom: 1px solid white;
 }
-.navGlobal .navbar-brand {
+.navGlobal.scrolled {
+  background: black;
+  transition: 0.5s ease-in-out;
+}
+.navbar-brand {
   font-family: "Yellowtail", cursive;
   font-size: 1.5em;
-  padding: 0px;
+  padding: 0;
 }
 
+/* Hero Section */
 #heroImage {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/background.jpeg");
+    url("images/new_background.JPEG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 75vh; /* Adjust the height as needed */
+  min-height: 75vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Align items to the bottom */
-  padding-bottom: 20%; /* Move the text up by 20% from the bottom */
-}
-#heroImage .heroTextContainer {
-  text-align: center;
-  width: 100%;
-  padding: 0 5%; /* Add padding around the text */
-  box-sizing: border-box;
-}
-#heroImage .heroText {
-  font-family: "Montserrat", sans-serif; /* Use normal font */
-  font-size: 4em; /* Adjust font size */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  word-wrap: break-word; /* Allow text to wrap */
-  width: 100%;
-  box-sizing: border-box;
-}
-#heroImage .heroSubText {
-  font-family: "Montserrat", sans-serif; /* Use normal font */
-  font-size: 2em;
-  color: white;
-  text-align: center;
-  margin-top: 10px; /* Added margin to create space */
-  word-wrap: break-word; /* Allow text to wrap */
-  width: 100%;
-  box-sizing: border-box;
-}
-#heroImage .heroPara {
-  color: white;
+  align-items: flex-start;
+  padding: 0;
 }
 
+.heroTextContainer {
+  width: 100%;
+  padding: 20px 5%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 60px; /* Space below navbar */
+}
+
+.heroText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Update Box */
+.updateBox {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.updateBox a {
+  color: #ffc107;
+}
+
+/* Footer Styling */
 footer {
   background-color: black;
   color: white;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 10px 0; /* Reduced padding */
-  margin-top: auto; /* Push footer to the bottom */
+  padding: 10px 0;
+  margin-top: auto;
 }
 
 #footerLogo h2 {
   font-family: "Yellowtail", cursive;
-  font-size: 3em; /* Reduced font size */
-  padding-top: 10px; /* Reduced padding */
-  padding-bottom: 5px; /* Reduced padding */
+  font-size: 2em;
+  padding: 10px 0 5px 0;
 }
 
 #footerLogo #address {
-  font-size: 0.8em; /* Reduced font size */
+  font-size: 0.8em;
   color: #a9a9a9;
   font-weight: 400;
   text-transform: uppercase;
@@ -156,142 +101,61 @@ footer {
 #copyrightMsg {
   font-size: 0.7em;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-bottom: 5px;
-  text-align: center;
 }
 
 footer a {
-  color: black;
-  text-decoration: none;
-  font-style: italic;
   color: white;
+  font-style: italic;
+  text-decoration: none;
 }
 footer a:hover {
   color: red;
 }
-.updateBox {
-  background: rgba(255, 255, 255, 0.2); /* Light background color */
-  backdrop-filter: blur(8px); /* Apply blur */
-  padding: 20px;
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
 
-  /* Remove absolute positioning to avoid overlap */
-  margin-top: 20px; /* Add space above the box */
-  margin-bottom: 20px; /* Add space below the box */
-  max-width: 80%; /* Limit the width to keep it responsive */
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
-}
-
-.heroTextContainer {
-  padding-bottom: 60px; /* Ensure space between the text and the update box */
-}
-
-.heroImage {
-  padding-top: 80px; /* Push the content down from the top */
-}
-
-.updateBox h3 {
-  font-weight: bold;
-}
-
-.updateBox a {
-  color: #ffc107; /* Highlight link */
-}
-
+/* Responsive Typography */
 @media (max-width: 1200px) {
-  #heroImage .heroText {
-    font-size: 3.5em; /* Smaller font size */
-  }
-  #heroImage .heroSubText {
-    font-size: 1.8em; /* Smaller font size */
+  .heroText {
+    font-size: 2.2em;
   }
 }
 
 @media (max-width: 992px) {
-  #heroImage .heroText {
-    font-size: 3em; /* Smaller font size */
-  }
-  #heroImage .heroSubText {
-    font-size: 1.5em; /* Smaller font size */
+  .heroText {
+    font-size: 2em;
   }
 }
 
 @media (max-width: 768px) {
-  #heroImage {
-    min-height: 70vh; /* Increase height for smaller screens */
-    padding-bottom: 20%; /* Move the text up */
-  }
-  #heroImage .heroTextContainer {
-    padding: 0 5%; /* Increase padding on smaller screens */
-  }
-  #heroImage .heroText {
-    font-size: 2.5em; /* Adjust font size */
-  }
-  #heroImage .heroSubText {
-    font-size: 1.5em; /* Adjust font size */
-    margin-top: 10px; /* Maintain space in smaller screens */
+  .heroText {
+    font-size: 1.8em;
   }
   #footerLogo h2 {
-    font-size: 2em; /* Smaller font size */
-  }
-  footer {
-    padding: 10px 0; /* Reduced padding */
+    font-size: 1.8em;
   }
 }
 
 @media (max-width: 576px) {
-  #heroImage {
-    min-height: 75vh; /* Increase height for very small screens */
-    padding-bottom: 20%; /* Move the text up */
+  .heroText {
+    font-size: 1.6em;
   }
-  #heroImage .heroText {
-    font-size: 2em; /* Adjust font size */
-  }
-  #heroImage .heroSubText {
-    font-size: 1.2em; /* Adjust font size */
-    margin-top: 10px; /* Maintain space in smaller screens */
+  .updateBox p {
+    font-size: 1.1rem;
   }
   #footerLogo h2 {
-    font-size: 1.5em; /* Even smaller font size */
+    font-size: 1.5em;
   }
 }
 
-/* iPhone XR (max-width: 414px) */
 @media (max-width: 414px) {
-  #heroImage {
-    min-height: 75vh; /* Increase height for iPhone XR */
-    padding-bottom: 20%; /* Move the text up */
-  }
-  #heroImage .heroText {
-    font-size: 1.8em; /* Adjusted font size for iPhone XR */
-  }
-  #heroImage .heroSubText {
-    font-size: 1.1em; /* Adjusted font size for iPhone XR */
-    margin-top: 10px; /* Maintain space in smaller screens */
-  }
-  #footerLogo h2 {
-    font-size: 1.8em; /* Adjusted font size for iPhone XR */
+  .heroText {
+    font-size: 1.4em;
   }
 }
 
-/* iPhone 12 Pro (max-width: 390px) */
 @media (max-width: 390px) {
-  #heroImage {
-    min-height: 75vh; /* Increase height for iPhone 12 Pro */
-    padding-bottom: 20%; /* Move the text up */
-  }
-  #heroImage .heroText {
-    font-size: 1.6em; /* Adjusted font size for iPhone 12 Pro */
-  }
-  #heroImage .heroSubText {
-    font-size: 1em; /* Adjusted font size for iPhone 12 Pro */
-    margin-top: 10px; /* Maintain space in smaller screens */
-  }
-  #footerLogo h2 {
-    font-size: 1.6em; /* Adjusted font size for iPhone 12 Pro */
+  .heroText {
+    font-size: 1.3em;
   }
 }
